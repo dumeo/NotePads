@@ -5,3 +5,6 @@ And I made this in Chinese version but the code structrue and logy is basically 
 
 
 If you like it, don't forget to give a star :)
+
+
+![img](https://github.com/dumeo/NotePads/blob/master/2022-01-14_22h04_50.png)
