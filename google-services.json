@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "591661111246",
+    "project_id": "jishiben-6f450",
+    "storage_bucket": "jishiben-6f450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591661111246:android:8e3c48d185b70946f53d9f",
+        "android_client_info": {
+          "package_name": "com.example.jishiben"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591661111246-f11ulu62cmvjfqsous6870tkd8v46dbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7Uu526127a2T_y_XNMuHrSwJzn6a3WHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591661111246-f11ulu62cmvjfqsous6870tkd8v46dbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

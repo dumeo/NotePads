@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/progressBarOfMainActivity"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/gotoForgotPassword"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"></ProgressBar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerline"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/centerline"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎回来"
+            android:textSize="42sp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="23sp"></TextView>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginemail"
+            android:hint="输入邮箱"
+            android:inputType="textEmailAddress"
+            tools:ignore="DuplicateIds"></EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerline"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        app:passwordToggleEnabled="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginpassword"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            ></EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            ></TextView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/gotoForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="忘记密码"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/gotosignup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bg2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            ></TextView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

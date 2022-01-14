@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".zhuce">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerline2"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@id/centerline2"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新用户"
+            android:textSize="42sp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎注册!"
+            android:textSize="23sp"></TextView>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/centerline2"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/email"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupemail"
+            android:hint="输入邮箱"
+            android:inputType="textEmailAddress"
+            tools:ignore="DuplicateIds"></EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centerline2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        app:passwordToggleEnabled="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signuppassword"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            ></EditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/bg2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            ></TextView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/zc_gobacktologin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:text="返回登录"
+        android:textAlignment="center"
+        android:textColor="@color/black"></TextView>
+
+    <ProgressBar
+        android:id="@+id/signupProgressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/zc_gobacktologin"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"></ProgressBar>
+
+
+
+</RelativeLayout>
